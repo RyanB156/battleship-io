@@ -1,0 +1,8 @@
+
+TODO:
+  Turn projectile types into 2 classes. Bullets, torpedos, and mines collide always. Missles collide at target.
+
+  Create update loop, move objects using their velocity
+
+  Create good design key handler
+    Limited dependence between app component and the handler -> use this for more games

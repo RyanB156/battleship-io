@@ -1,0 +1,45 @@
+
+<canvas #imageCanvas (mousedown)="canvasClicked($event)" (touchstart)="canvasClicked($event)"></canvas>
+
+<div>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" text-center>
+        <ion-buttons>
+          <ion-button (click)="forward()">
+            <ion-icon slot="start" name="arrow-up-outline"></ion-icon>
+            Forward
+          </ion-button>
+        </ion-buttons>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12" text-center>
+        <ion-buttons>
+          <ion-button (click)="turnLeft()">
+            <ion-icon slot="start" name="arrow-back-outline"></ion-icon>
+            Left
+          </ion-button>
+          <ion-button (click)="turnRight()">
+            <ion-icon slot="end" name="arrow-forward-outline"></ion-icon>
+            Right
+          </ion-button>
+        </ion-buttons>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6" text-center>
+        <ion-buttons>
+          <ion-button (click)="backward()">
+            <ion-icon slot="" name="arrow-down-outline"></ion-icon>
+            Backward
+          </ion-button>
+        </ion-buttons>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
+
+<ion-footer>
+  <div class="ion-text-center">Map</div>
+</ion-footer>
